@@ -17,6 +17,45 @@
       background-attachment: fixed;
       margin: 0;
       padding: 0;
+      overflow-x: hidden;
+    }
+
+    .banner {
+      background-color: #000;
+      color: #F3CE32;
+      font-family: "MyFont", sans-serif;
+      font-size: 30px;
+      padding: 15px 0;
+      overflow: hidden;
+      white-space: nowrap;
+      position: relative;
+      border-bottom: 3px solid #F3CE32;
+    }
+
+    .banner a {
+      color: #F3CE32;
+      text-decoration: none;
+      display: block;
+    }
+
+    .banner:hover {
+      background-color: #1a1a1a;
+      cursor: pointer;
+    }
+
+    .banner-text {
+      display: inline-block;
+      padding-left: 100%;
+      animation: scroll-left 20s linear infinite;
+    }
+
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
     }
 
     .logo-container {
@@ -40,9 +79,68 @@
       font-family: Arial, sans-serif;
       font-size: 35px;
     }
+
+    .social-container {
+      text-align: center;
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      flex-wrap: wrap;
+    }
+
+    .social-link {
+      display: inline-block;
+      text-decoration: none;
+      color: #F3CE32;
+      font-family: "MyFont", sans-serif;
+      font-size: 45px;
+      text-transform: uppercase;
+      transform: rotate(-3deg);
+      transition: all 0.3s ease;
+      text-shadow: 
+        3px 3px 0px #000,
+        -1px -1px 0px #000,
+        1px -1px 0px #000,
+        -1px 1px 0px #000,
+        4px 4px 10px rgba(0,0,0,0.5);
+      padding: 10px 20px;
+      position: relative;
+    }
+
+    .social-link:hover {
+      transform: rotate(2deg) scale(1.1);
+      text-shadow: 
+        5px 5px 0px #000,
+        -2px -2px 0px #000,
+        2px -2px 0px #000,
+        -2px 2px 0px #000,
+        6px 6px 15px rgba(0,0,0,0.7);
+    }
+
+    .social-link:nth-child(1) {
+      color: #E1306C;
+      transform: rotate(2deg);
+    }
+
+    .social-link:nth-child(2) {
+      color: #FF0000;
+      transform: rotate(-4deg);
+    }
+
+    .social-link:nth-child(3) {
+      color: #00f2ea;
+      transform: rotate(3deg);
+    }
     </style>
 </head>
 <body>
+
+    <div class="banner">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdL8pGu_GgqQPuC_jvuIgoMIt6dVng7eOFiczPugKWOM7dg-w/viewform" target="_blank">
+            <div class="banner-text">RSVP FOR HOT CONCRETE • RSVP FOR HOT CONCRETE • RSVP FOR HOT CONCRETE • RSVP FOR HOT CONCRETE • RSVP FOR HOT CONCRETE • </div>
+        </a>
+    </div>
 
     <div class="logo-container">
         <img src="https://pub-21e0807f7db74ac1baa7460cba8308d7.r2.dev/dogmasvg.svg" alt="Dogma Logo" class="logo">
@@ -50,8 +148,11 @@
 
     <p class="centered-text subtitle-text">under construction</p>
 
+    <div class="social-container">
+        <a href="https://www.instagram.com/bythedawgz/" target="_blank" class="social-link">INSTAGRAM</a>
+        <a href="https://www.youtube.com/@bythedawgz" target="_blank" class="social-link">YOUTUBE</a>
+        <a href="https://www.tiktok.com/@bythedawgz" target="_blank" class="social-link">TIKTOK</a>
+    </div>
+
 </body>
 </html>
-
-
-
