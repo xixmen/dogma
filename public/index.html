@@ -1,7 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>dogma</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOGMA</title>
+    
+    <meta property="og:title" content="DOGMA">
+    <meta property="og:description" content="DOGMA">
+    <meta property="og:type" content="website">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="DOGMA">
+    <meta name="twitter:description" content="DOGMA">
+    
+    <meta name="description" content="DOGMA">
+    
     <style>
     @font-face {
       font-family: "MyFont";
@@ -131,6 +144,57 @@
     .social-link:nth-child(3) {
       color: #00f2ea;
       transform: rotate(3deg);
+    }
+
+    @media (max-width: 768px) {
+      .banner {
+        font-size: 20px;
+        padding: 10px 0;
+      }
+
+      .logo-container {
+        margin-top: 10px;
+      }
+
+      .logo {
+        width: 80%;
+        max-width: 300px;
+      }
+
+      .social-container {
+        margin-top: 30px;
+        gap: 20px;
+        padding: 0 10px;
+      }
+
+      .social-link {
+        font-size: 28px;
+        padding: 8px 15px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .banner {
+        font-size: 16px;
+        padding: 8px 0;
+      }
+
+      .logo {
+        width: 90%;
+        max-width: 250px;
+      }
+
+      .social-container {
+        margin-top: 20px;
+        gap: 15px;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .social-link {
+        font-size: 32px;
+        padding: 10px 20px;
+      }
     }
     </style>
 </head>
