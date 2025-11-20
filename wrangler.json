@@ -1,0 +1,7 @@
+{
+  "name": "dogma",
+  "compatibility_date": "2025-11-20",
+  "assets": {
+    "directory": "./public"
+  }
+}
